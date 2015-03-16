@@ -47,7 +47,6 @@ class App < Sinatra::Base
     slim :user_create
   end
 
-
   get '/order' do
     slim :order
   end
@@ -60,6 +59,9 @@ class App < Sinatra::Base
     slim :contact
   end
 
+  get '/colacookie' do
+    slim :colacookie
+  end
 
 end
 

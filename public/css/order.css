@@ -66,8 +66,9 @@ a {
 #p {
     color: white;
     font-family: times new roman;
-    font-size: 10px;
+    font-size: 18px;
     padding-top: 20px;
+
 }
 
 #p2 {
@@ -79,3 +80,31 @@ a {
 
 }
 
+#img1 {
+    margin-left: 240px;
+    margin-top: 80px;
+    height: 160px;
+    width: 160px;
+}
+
+
+#img2 {
+    margin-left: 570px;
+    margin-top: 0px;
+    height: 160px;
+    width: 160px;
+}
+
+#img3 {
+    margin-left: 240px;
+    margin-top: 1px;
+    height: 160px;
+    width: 160px;
+}
+
+p1 {
+    color: black;
+    font-family: times new roman;
+    font-size: 20px;
+    text-align: justify;
+}
