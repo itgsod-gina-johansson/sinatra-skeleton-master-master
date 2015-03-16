@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 55px;
+    padding-left: 30px;
+}
+
+#checkout {
+    text-decoration: none;
+    float: right;
+    padding-right: 10%;
+    padding-top: 40px;
+}
+
+#header {
+    line-height:40px;
+    background-color: #45276C;
+    height:100px;
+    width:1230px;
+    padding:10px;
+}
+
+#meny {
+    background-color: #321952;
+    height:18px;
+    width:1230px;
+    padding:10px;
+
+
+}
+
+a {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-family: times new roman;
+    text-decoration: none;
+}
+
