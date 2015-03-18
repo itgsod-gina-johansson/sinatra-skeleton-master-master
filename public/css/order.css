@@ -17,7 +17,6 @@ p {
     padding-top: 40px;
 }
 
-
 #header {
     line-height:40px;
     background-color: #45276C;
@@ -31,8 +30,6 @@ p {
     height:18px;
     width:1230px;
     padding:10px;
-
-
 }
 
 a {
@@ -68,7 +65,6 @@ a {
     font-family: times new roman;
     font-size: 18px;
     padding-top: 20px;
-
 }
 
 #p2 {
@@ -77,34 +73,68 @@ a {
     font-size: 40px;
     padding-left: 350px;
     padding-top: 10px;
-
 }
 
 #img1 {
-    margin-left: 240px;
+    float: right;
+    margin-right: 170px;
     margin-top: 80px;
     height: 160px;
     width: 160px;
 }
 
-
 #img2 {
-    margin-left: 570px;
-    margin-top: 0px;
+    margin-top: 80px;
+    float: right;
+    margin-right: 200px;
     height: 160px;
     width: 160px;
 }
 
 #img3 {
-    margin-left: 240px;
-    margin-top: 1px;
+    margin-top: 80px;
+    float:inherit;
+    margin-left: 250px;
     height: 160px;
     width: 160px;
 }
 
-p1 {
+#p1 {
     color: black;
     font-family: times new roman;
     font-size: 20px;
-    text-align: justify;
+    float:right;
+    margin-right: 45px;
+}
+
+#p3 {
+    color: black;
+    font-family: times new roman;
+    font-size: 20px;
+    float:right;
+    margin-right: 8px;
+}
+
+#p4 {
+    color: black;
+    font-family: times new roman;
+    font-size: 20px;
+    float:right;
+    margin-right: 25px;
+}
+
+#p5 {
+    color: black;
+    font-family: times new roman;
+    font-size: 20px;
+    float:right;
+    margin-right: 25px;
+}
+
+#p6 {
+    color: black;
+    font-family: times new roman;
+    font-size: 20px;
+    float:right;
+    margin-right: 6px;
 }

@@ -63,5 +63,13 @@ class App < Sinatra::Base
     slim :colacookie
   end
 
+  get '/Kakor/chocolatechip' do
+    slim :chocolatechip
+  end
+
+  get '/gingerbread' do
+    slim :gingerbread
+  end
+
 end
 
