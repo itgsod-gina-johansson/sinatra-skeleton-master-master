@@ -7,6 +7,7 @@ class App < Sinatra::Base
     @statuses = Status.all
     @line_items = LineItem.all
     @orders = Order.all
+    @user_orders = User_order.all
     slim :index
   end
 
@@ -59,7 +60,19 @@ class App < Sinatra::Base
     slim :contact
   end
 
-  get '/colacookie' do
+  get '/buns' do
+    slim :buns
+  end
+
+  get '/cakes' do
+    slim :cakes
+  end
+
+  get '/fikabread' do
+    slim :fikabread
+  end
+
+  get '/Kakor/colacookie' do
     slim :colacookie
   end
 
@@ -67,9 +80,92 @@ class App < Sinatra::Base
     slim :chocolatechip
   end
 
-  get '/gingerbread' do
+  get '/Kakor/gingerbread' do
     slim :gingerbread
   end
 
+  get '/Kakor/vanilladream' do
+    slim :vanilladream
+  end
+
+  get '/Kakor/vanillaheart' do
+    slim :vanillaheart
+  end
+
+  get '/Kakor/M&Mcookie' do
+    slim :M&Mcookie
+  end
+
+  get '/Tårtor/cheesecake' do
+    slim :cheesecake
+  end
+
+  get '/Tårtor/chocolatecake' do
+    slim :chocolatecake
+  end
+
+  get '/Tårtor/marängcake' do
+    slim :marängcake
+  end
+
+  get '/Tårtor/mudcake' do
+    slim :mudcake
+  end
+
+  get '/Tårtor/prinsesscake' do
+    slim :prinsesscake
+  end
+
+  get '/Tårtor/strawberrycake' do
+    slim :strawberrycake
+  end
+
+  get '/Bullar/cinnamonbun' do
+    slim :cinnamonbun
+  end
+
+  get '/Bullar/lussebun' do
+    slim :lussebun
+  end
+
+  get '/Bullar/pistagebun' do
+    slim :pistagebun
+  end
+
+  get '/Bullar/sunshinebun' do
+    slim :sunshinebun
+  end
+
+  get '/Bullar/vanillabun' do
+    slim :vanillabun
+  end
+
+  get '/Bullar/wienerbread' do
+    slim :wienerbread
+  end
+
+  get '/Fikabröd/blueberrymuffin' do
+    slim :blueberrymuffin
+  end
+
+  get '/Fikabröd/carrotcupcake' do
+    slim :carrotcupcake
+  end
+
+  get '/Fikabröd/chocolatemuffin' do
+    slim :chocolatemuffin
+  end
+
+  get '/Fikabröd/raspberrymuffin' do
+    slim :raspberrymuffin
+  end
+
+  get '/Fikabröd/vanillacupcakes' do
+    slim :vanillacupcakes
+  end
+
+  get '/Fikabrödvanillamuffins' do
+    slim :vanillamuffins
+  end
 end
 

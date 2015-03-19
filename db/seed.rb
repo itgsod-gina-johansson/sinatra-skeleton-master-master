@@ -6,6 +6,7 @@ class Seeder
     self.product
     self.status
     self.user
+    self.user_order
   end
 
   def self.line_item
@@ -31,5 +32,9 @@ class Seeder
   def self.user
     User.create(username: "Joggiz", password: "bananer", first_name: "Gina", last_name:"Johansson", adress: "Grens väg 12",
                 post_number: "14763")
+  end
+
+  def self.user_order
+    User_order.create(product: "Prinsesstårta", amount:'3st')
   end
 end
