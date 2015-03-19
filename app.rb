@@ -60,8 +60,8 @@ class App < Sinatra::Base
     slim :contact
   end
 
-  get '/buns' do
-    slim :buns
+  get '/muffin' do
+    slim :muffin
   end
 
   get '/cakes' do
@@ -72,99 +72,99 @@ class App < Sinatra::Base
     slim :fikabread
   end
 
-  get '/Kakor/colacookie' do
+  get '/colacookie' do
     slim :colacookie
   end
 
-  get '/Kakor/chocolatechip' do
+  get '/chocolatechip' do
     slim :chocolatechip
   end
 
-  get '/Kakor/gingerbread' do
+  get '/gingerbread' do
     slim :gingerbread
   end
 
-  get '/Kakor/vanilladream' do
+  get '/vanilladream' do
     slim :vanilladream
   end
 
-  get '/Kakor/vanillaheart' do
+  get '/vanillaheart' do
     slim :vanillaheart
   end
 
-  get '/Kakor/M&Mcookie' do
+  get '/M&Mcookie' do
     slim :M&Mcookie
   end
 
-  get '/Tårtor/cheesecake' do
+  get '/cheesecake' do
     slim :cheesecake
   end
 
-  get '/Tårtor/chocolatecake' do
+  get '/chocolatecake' do
     slim :chocolatecake
   end
 
-  get '/Tårtor/marängcake' do
+  get '/marängcake' do
     slim :marängcake
   end
 
-  get '/Tårtor/mudcake' do
+  get '/mudcake' do
     slim :mudcake
   end
 
-  get '/Tårtor/prinsesscake' do
+  get '/prinsesscake' do
     slim :prinsesscake
   end
 
-  get '/Tårtor/strawberrycake' do
+  get '/strawberrycake' do
     slim :strawberrycake
   end
 
-  get '/Bullar/cinnamonbun' do
+  get '/cinnamonbun' do
     slim :cinnamonbun
   end
 
-  get '/Bullar/lussebun' do
+  get '/lussebun' do
     slim :lussebun
   end
 
-  get '/Bullar/pistagebun' do
+  get '/pistagebun' do
     slim :pistagebun
   end
 
-  get '/Bullar/sunshinebun' do
+  get '/sunshinebun' do
     slim :sunshinebun
   end
 
-  get '/Bullar/vanillabun' do
+  get '/vanillabun' do
     slim :vanillabun
   end
 
-  get '/Bullar/wienerbread' do
+  get '/wienerbread' do
     slim :wienerbread
   end
 
-  get '/Fikabröd/blueberrymuffin' do
+  get '/blueberrymuffin' do
     slim :blueberrymuffin
   end
 
-  get '/Fikabröd/carrotcupcake' do
+  get '/carrotcupcake' do
     slim :carrotcupcake
   end
 
-  get '/Fikabröd/chocolatemuffin' do
+  get '/chocolatemuffin' do
     slim :chocolatemuffin
   end
 
-  get '/Fikabröd/raspberrymuffin' do
+  get '/raspberrymuffin' do
     slim :raspberrymuffin
   end
 
-  get '/Fikabröd/vanillacupcakes' do
+  get '/vanillacupcakes' do
     slim :vanillacupcakes
   end
 
-  get '/Fikabrödvanillamuffins' do
+  get '/vanillamuffins' do
     slim :vanillamuffins
   end
 end
