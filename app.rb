@@ -167,5 +167,9 @@ class App < Sinatra::Base
   get '/vanillamuffins' do
     slim :vanillamuffins
   end
+
+  get '/checkout' do
+    slim :checkout
+  end
 end
 
