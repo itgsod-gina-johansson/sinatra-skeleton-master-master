@@ -4,14 +4,10 @@ body {
 
 #login {
     float: right;
-    margin-top: 0px;
-    margin-right: 10px;
 }
 
 #create {
     float: right;
-    margin-bottom: 100px;
-    margin-left: 1px;
 }
 
 h1 {
@@ -19,13 +15,21 @@ h1 {
     font-family: cursive;
     font-size: 55px;
     padding-left: 30px;
+    float: left;
 }
 
 #header {
     background-color: #45276C;
     line-height: 40px;
     width:1240px;
+    height: 110px;
     padding:10px;
+}
+
+#checkout {
+    text-decoration: none;
+    margin-left: 1030px;
+    margin-top: 55px;
 }
 
 #meny {

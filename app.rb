@@ -8,7 +8,7 @@ class App < Sinatra::Base
     @line_items = LineItem.all
     @orders = Order.all
     @user_orders = User_order.all
-    slim :index
+    slim :homepage
   end
 
   before %r{^(?!/login$)} do
@@ -17,7 +17,7 @@ class App < Sinatra::Base
   end
 
   get '/login' do
-    slim :index
+    slim :homepage
   end
 
   post '/login' do
