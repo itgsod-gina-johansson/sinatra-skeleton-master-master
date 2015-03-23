@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 
-h1 {
+p {
     color: white;
     font-family: cursive;
     font-size: 55px;
@@ -40,41 +40,16 @@ a {
     text-decoration: none;
 }
 
-#princesscake {
+#vanilladream {
     float: left;
     margin-left: 205px;
     margin-top: 100px;
 }
 
-#p30 {
+#p36 {
     color: black;
     font-family: times new roman;
     float: right;
     margin-right: 400px;
     margin-top: 0px;
-}
-
-#p31 {
-    margin-top: 100px;
-    font-size: 35px;
-}
-
-#p32 {
-    margin-top:20px;
-    font-size: 25px;
-}
-
-#p33 {
-    color: black;
-    font-family: times new roman;
-    margin-left: 0px;
-    margin-top: 60px;
-}
-
-#p34 {
-    color: black;
-    font-family: times new roman;
-    float: right;
-    margin-right: 400px;
-    margin-top: 180px;
 }
