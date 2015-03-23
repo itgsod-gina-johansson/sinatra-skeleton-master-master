@@ -92,8 +92,8 @@ class App < Sinatra::Base
     slim :vanillaheart
   end
 
-  get '/M&Mcookie' do
-    slim :M&Mcookie
+  get '/MoMcookie' do
+    slim :MoMcookie
   end
 
   get '/cheesecake' do
