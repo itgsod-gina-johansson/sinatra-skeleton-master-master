@@ -12,23 +12,22 @@ p {
 
 #checkout {
     text-decoration: none;
-    float: right;
-    padding-right: 10%;
-    padding-top: 40px;
+    margin-left: 1030px;
+    margin-top: 55px;
 }
 
 #header {
-    line-height:40px;
     background-color: #45276C;
-    height:100px;
-    width:1230px;
+    line-height: 40px;
+    width:1240px;
+    height: 110px;
     padding:10px;
 }
 
 #meny {
     background-color: #321952;
     height:18px;
-    width:1230px;
+    width:1240px;
     padding:10px;
 }
 
