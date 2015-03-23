@@ -16,20 +16,18 @@ h1 {
 }
 
 #header {
-    line-height:40px;
     background-color: #45276C;
-    height:110px;
-    width:1230px;
+    line-height: 40px;
+    width:1240px;
+    height: 110px;
     padding:10px;
 }
 
 #meny {
     background-color: #321952;
     height:18px;
-    width:1230px;
+    width:1240px;
     padding:10px;
-
-
 }
 
 a {
@@ -39,4 +37,3 @@ a {
     font-family: times new roman;
     text-decoration: none;
 }
-
