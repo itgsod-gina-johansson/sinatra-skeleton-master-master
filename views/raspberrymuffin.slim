@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    link rel="stylesheet" type="text/css" href="/css/raspberrymuffin.css"
+    title Fikabudet
+  body
+
+#header
+  h1 Fikabudet
+  #checkout
+    a href='/checkout'
+      img src="/pics/white-checkout-256.png" style='width:30px;height:30px;' &nbsp;&nbsp;Till kassan
+
+
+#meny
+  #a
+  a href='/' Startsida
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  a href='/order' Beställ
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  a href='/contact' Kontakta oss
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  a href='/about' Om fikabudet
+
+#raspberrymuffins
+  img src='/pics/Hallonmuffins.jpeg' style='width:280px;heigth:230px;' border='2px solid black'
+    #p33
+      h2 Ingredienser
+      p Smör
+      p Ägg
+      p Strösocker
+      p Vaniljsocker
+      p Vetemjöl
+      p Mjölk
+      p Bakpulver
+      p Hallon
+
+#p30
+  #p31 Hallonmuffins
+  #p32 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20 :-/st
+
+  #antal
+    lable for='qty'
+    p Antal
+    input id="qty" class="input-text form-control qty" type="text" title="Antal" value="1" maxlength="12" name="qty"
+
+    #add
+      button class="button btn btn-cart" onclick="productAddToCartForm.submit(this)" title="Köp" type="button"
+        p50 Lägg till
+
+#p34
+  h2 Beskrivning
+  p Innehåller laktos och gluten.
+  p Packas i en muffinskartong.
+  p 8 st i en kartong.
