@@ -12,7 +12,7 @@ html
     #login
       - if @user
         form action='/logout' method='post'
-          span Logged in as #{@user.username}
+          span Välkommen #{@user.username}!
           button type='submit' Logout
       - else
         form action='/login' method='post'
