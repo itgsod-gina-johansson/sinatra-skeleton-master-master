@@ -185,15 +185,19 @@ class App < Sinatra::Base
     slim :checkout
   end
 
-  post '/checkout' do
-    redirect '/creditcard'
-  end
-
   get '/creditcard' do
     slim :creditcard
   end
 
   post '/creditcard' do
+    redirect '/checkout'
+  end
+
+  get '/faktura' do
+    slim :faktura
+  end
+
+  post '/faktura' do
     redirect '/checkout'
   end
 end
