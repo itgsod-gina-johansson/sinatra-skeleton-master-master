@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    link rel="stylesheet" type="text/css" href="/css/homepage.css"
+    title Fikabudet
+  body
+
+
+#header
+  h1 Fikabudet
+
+h2 Betalning med kreditkort
+
+form action='/creditcard' method='post'
+
+  input type='text' name='first_name' placeholder='Förnamn' &nbsp&nbsp&nbsp&nbsp&nbsp
+  input type='text' name='last_name' placeholder='Efternamn' &nbsp&nbsp&nbsp&nbsp&nbsp
+
+  input type='text' name='adress' placeholder='Adress' &nbsp&nbsp&nbsp&nbsp&nbsp
+  input type='text' name='post_number' placeholder='Postnummer' &nbsp&nbsp&nbsp&nbsp&nbsp
+  input type='text' name='ort' placeholder='Ort' &nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+  input type='text' name='telefonnumber' placeholder='Mobilnr' &nbsp&nbsp&nbsp&nbsp&nbsp
+  input type='text' name='email' placeholder='E-post' &nbsp&nbsp&nbsp&nbsp&nbsp
+
+  select name="Dag"
+    option value="Måndag" Måndag
+    option value="Tisdag" Tisdag
+    option value="Onsdag" Onsdag
+    option value="Torsdag" Torsdag
+    option value="Fredag" Fredag
+    option value="Lördag" Lördag
+    option value="Söndag" Söndag
+
+  select name="Tid"
+    option value="11.00-12.00" 11.00-12.00
+    option value="12.00-13.00" 12.00-13.00
+    option value="13.00-14.00" 13.00-14.00
+    option value="14.00-15.00" 14.00-15.00
+    option value="15.00-16.00" 15.00-16.00
+    option value="16.00-17.00" 16.00-17.00
+    option value="17.00-18.00" 17.00-18.00
+
+
+  button onclick="window.location.href='/checkout'" Beställ

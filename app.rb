@@ -180,5 +180,21 @@ class App < Sinatra::Base
     Amount.create(amount: params['amount'], user_id: @user)
     redirect back
   end
+
+  get '/checkout' do
+    slim :checkout
+  end
+
+  post '/checkout' do
+    redirect '/creditcard'
+  end
+
+  get '/creditcard' do
+    slim :creditcard
+  end
+
+  post '/creditcard' do
+    redirect '/checkout'
+  end
 end
 
