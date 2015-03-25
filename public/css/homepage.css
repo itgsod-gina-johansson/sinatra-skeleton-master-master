@@ -66,33 +66,10 @@ a {
     font-family: times new roman;
 }
 
-#text {
-    padding-left: 490px;
-    position: absolute;
-    top: 365px;
-    color: black;
-    font-size: 20px;
-    font-family: times new roman;
+#imgfika {
+    margin-top: 90px;
+    margin-left: 380px;
 }
-
-<<<<<<< HEAD
-#img4 {
-    margin-top: 110px;
-    float:inherit;
-    margin-left: 100px;
-    height: 160px;
-    width: 160px;
-}
-
-#img5 {
-    float: right;
-    height: 160px;
-    width: 160px;
-    margin-right: 140px;
-
-}
-=======
->>>>>>> origin/master
 
 
 
