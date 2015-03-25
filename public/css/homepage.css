@@ -84,18 +84,10 @@ a {
 }
 
 #img5 {
-    margin-top: 120px;
-    margin-right: auto;
-    margin-left: auto;
+    float: right;
     height: 160px;
     width: 160px;
-}
-
-#img6 {
-    margin-top: 8px;
-    margin-left: 1000px;
-    height: 160px;
-    width: 160px;
+    margin-right: 140px;
 
 }
 
