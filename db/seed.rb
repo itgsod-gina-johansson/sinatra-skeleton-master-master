@@ -7,6 +7,7 @@ class Seeder
     self.status
     self.user
     self.user_order
+    self.amount
   end
 
   def self.line_item
@@ -38,5 +39,9 @@ class Seeder
     User_order.create(product: "Prinsesstårta", amount:'3st', cost:'450kr')
     User_order.create(product: "Kolakaka", amount:'24st', cost:'240kr')
     User_order.create(product: "Vaniljcupcake", amount:'8st', cost:'200kr')
+  end
+
+  def self.amount
+    Amount.create(amount: 3, order_id: 1, product_id: 1, user_id: 1)
   end
 end

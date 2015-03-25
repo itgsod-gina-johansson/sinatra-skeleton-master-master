@@ -75,6 +75,7 @@ a {
     font-family: times new roman;
 }
 
+<<<<<<< HEAD
 #img4 {
     margin-top: 110px;
     float:inherit;
@@ -90,37 +91,8 @@ a {
     margin-right: 140px;
 
 }
+=======
+>>>>>>> origin/master
 
-#p7 {
-    color: black;
-    font-family: times new roman;
-    font-size: 20px;
-    float:right;
-    margin-right: 35px;
-}
-
-#p8 {
-    color: black;
-    font-family: times new roman;
-    font-size: 20px;
-    float:right;
-    margin-right: 25px;
-}
-
-#p9 {
-    color: black;
-    font-family: times new roman;
-    font-size: 20px;
-    float:right;
-    margin-right: 25px;
-}
-
-#p10 {
-    color: black;
-    font-family: times new roman;
-    font-size: 20px;
-    float:right;
-    margin-right: 25px;
-}
 
 
