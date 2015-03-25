@@ -68,8 +68,8 @@ class App < Sinatra::Base
     slim :cakes
   end
 
-  get '/fikabread' do
-    slim :fikabread
+  get '/bun' do
+    slim :bun
   end
 
   get '/colacookie' do
