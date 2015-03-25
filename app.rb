@@ -197,4 +197,3 @@ class App < Sinatra::Base
     redirect '/checkout'
   end
 end
-
