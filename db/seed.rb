@@ -35,6 +35,8 @@ class Seeder
   end
 
   def self.user_order
-    User_order.create(product: "Prinsesstårta", amount:'3')
+    User_order.create(product: "Prinsesstårta", amount:'3st', cost:'450kr')
+    User_order.create(product: "Kolakaka", amount:'24st', cost:'240kr')
+    User_order.create(product: "Vaniljcupcake", amount:'8st', cost:'200kr')
   end
 end

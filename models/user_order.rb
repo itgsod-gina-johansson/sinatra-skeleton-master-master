@@ -4,6 +4,6 @@ class User_order
   property :id, Serial
   property :product, String
   property :amount, String
-
+  property :cost, String
 
 end
