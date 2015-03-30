@@ -192,7 +192,6 @@ class App < Sinatra::Base
   post '/creditcard' do
     redirect '/checkout'
   end
-<<<<<<< HEAD
 
   get '/faktura' do
     slim :faktura
@@ -203,6 +202,4 @@ class App < Sinatra::Base
   end
 end
 
-=======
-end
->>>>>>> origin/master
+
