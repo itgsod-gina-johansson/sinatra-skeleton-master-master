@@ -1,10 +1,4 @@
-doctype html
-html
-  head
-    meta charset="utf-8"
-    link rel="stylesheet" type="text/css" href="/css/bun.css"
-    title Fikabudet
-  body
+link rel="stylesheet" type="text/css" href="/css/order.css"
 
 #meny2
   #p
@@ -23,44 +17,8 @@ html
 #container
   #p2 Bullar
 
-#img1
-  a href='/cinnamonbun'
-    img src='/pics/Kanelbullar.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p16
-      p1 Kanelbullar
-  br
-  br
-  br
-  br
-  a href='/lussebun'
-    img src='/pics/Lussebullar.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p17
-      p1 Lussebullar
-
-#img2
-  a href='/pistagebun'
-    img src='/pics/Pistagebulle.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p18
-      p1 Pistagebullar
-  br
-  br
-  br
-  br
-  a href='/vanillabun'
-    img src='/pics/Vaniljbulle.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p19
-      p1 Vaniljbullar
-
-#img3
-  a href='/sunshinebun'
-    img src='/pics/solskensbullar.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p20
-      p1 Solskensbullar
-  br
-  br
-  br
-  br
-  a href='/wienerbread'
-    img src='/pics/wienerbröd.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p21
-      p1 Wienerbröd
+-for product in @products
+  .product
+    a href="/product/#{product.id}"
+      img src="/pics/#{product.id}.jpg"
+    h2= product.name
