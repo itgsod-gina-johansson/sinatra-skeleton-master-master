@@ -9,6 +9,10 @@ h1 {
     padding-left: 30px;
 }
 
+h2 {
+    color: black;
+}
+
 #checkout {
     text-decoration: none;
     margin-left: 1030px;
