@@ -6,39 +6,6 @@ html
     title Fikabudet
   body
 
-
-#header
-    h1 Fikabudet
-    #login
-      - if @user
-        form action='/logout' method='post'
-          span Välkommen #{@user.username}!
-          button type='submit' Logout
-      - else
-        form action='/login' method='post'
-          input type='text' name='username' placeholder='Username'
-          input type='password' name='password' placeholder='Password'
-          button type='submit' method='post' Login
-
-    #create
-      a href="/user_create" Register
-
-
-
-    #checkout
-      a href='/checkout'
-        img src="/pics/white-checkout-256.png" style='width:30px;height:30px;' &nbsp;&nbsp;Till kassan
-
-#meny
-  #a
-    a href='/' Startsida
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/order' Beställ
-                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/contact' Kontakta oss
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/about' Om fikabudet
-
 #welcome
   #p2 Välkommen!
 
