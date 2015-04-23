@@ -74,28 +74,28 @@ class App < Sinatra::Base
     slim :bun
   end
 
-  get '/colacookie' do
-    slim :colacookie
-  end
-
-  get '/chocolatechip' do
+  get '/product/1' do
     slim :chocolatechip
   end
 
-  get '/gingerbread' do
+  get '/product/2' do
+    slim :colacookie
+  end
+
+  get '/product/3' do
     slim :gingerbread
   end
 
-  get '/vanilladream' do
+  get '/product/4' do
+    slim :MoMcookie
+  end
+
+  get '/product/5' do
     slim :vanilladream
   end
 
-  get '/vanillaheart' do
+  get '/product/6' do
     slim :vanillaheart
-  end
-
-  get '/MoMcookie' do
-    slim :MoMcookie
   end
 
   get '/cheesecake' do
