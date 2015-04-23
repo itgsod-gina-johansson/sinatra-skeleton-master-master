@@ -8,6 +8,8 @@ class User
   property :last_name, Text
   property :adress, Text
   property :post_number, Text
+  property :email, Text
+  property :phonenumber, Text
 
   has n, :orders
 
