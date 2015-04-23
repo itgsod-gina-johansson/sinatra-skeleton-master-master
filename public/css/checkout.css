@@ -1,38 +1,3 @@
-body {
-    background-color: white;
-}
-
-h1 {
-    color: white;
-    font-family: cursive;
-    font-size: 55px;
-    padding-left: 30px;
-    float: left;
-}
-
-#header {
-    background-color: #45276C;
-    line-height: 40px;
-    width:1240px;
-    height: 110px;
-    padding:10px;
-}
-
-#meny {
-    background-color: #321952;
-    height:18px;
-    width:1240px;
-    padding:10px;
-}
-
-a {
-    padding-left: 30px;
-    padding-bottom: 30px;
-    color: white;
-    font-family: times new roman;
-    text-decoration: none;
-}
-
 p {
     margin-left: 40px;
 }
