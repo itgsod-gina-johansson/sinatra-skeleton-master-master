@@ -41,8 +41,8 @@ html
   #p32 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20 :-/st
 
   #amount
-    form action='/amount' method='post'
-      p Antal
+    form action="/order/#{product.id}" method='post'
+      p Anta
       input type='text' name='amount' placeholder='1'
 
       button type='submit' method='post' Lägg till

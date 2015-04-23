@@ -32,7 +32,8 @@ class App < Sinatra::Base
 
   post '/create_new_user' do
     User.create(username: params['username'], password: params['password'], first_name: params['first_name'], last_name: params['last_name'], adress: params['adress'],
-                   post_number: params['post_number'])
+                   post_number: params['post_number'], email: params['email'], phonenumber: ['phonenumber'])
+    redirect '/'
   end
 
   post '/logout' do
@@ -49,6 +50,7 @@ class App < Sinatra::Base
   end
 
   get '/order' do
+    @products = Product.all
     slim :order
   end
 
@@ -172,12 +174,16 @@ class App < Sinatra::Base
     slim :checkout
   end
 
-  get '/amount' do
+  get '/LineItem' do
     slim :amount
   end
 
-  post '/amount' do
-    Amount.create(amount: params['amount'], user_id: @user)
+  post '/LineItem' do
+    redirect back
+  end
+
+  post '/add_to_cart/:product' do |product_id|
+    LineItem.create(amount: params['amount'], user_id: @user)
     redirect back
   end
 
