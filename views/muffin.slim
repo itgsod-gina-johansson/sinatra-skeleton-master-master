@@ -6,23 +6,6 @@ html
     title Fikabudet
   body
 
-  #header
-    h1 Fikabudet
-    #checkout
-      a href='/checkout'
-        img src="/pics/white-checkout-256.png" style='width:30px;height:30px;' &nbsp;&nbsp;Till kassan
-
-
-  #meny
-    #a
-    a href='/' Startsida
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/order' Beställ
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/contact' Kontakta oss
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    a href='/about' Om fikabudet
-
 #meny2
   #p
     a href='/order' Små kakor
@@ -40,44 +23,8 @@ html
 #container
   #p28 Muffins
 
-#img1
-  a href='/blueberrymuffin'
-    img src='/pics/Blåbärsmuffins.jpeg' style='width:180px;height=180px;border:2px solid black;'
-    #p11
-      p1 Blåbärsmuffins
-  br
-  br
-  br
-  br
-  a href='/raspberrymuffin'
-    img src='/pics/Hallonmuffins.jpeg' style='width:180px;height=180px;border:2px solid black;'
-    #p12
-      p1 Hallonmuffins
-
-#img2
-  a href='/chocolatemuffin'
-    img src='/pics/chokladmuffins.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p13
-      p1 Chokladmuffins
-  br
-  br
-  br
-  br
-  a href='/carrotcupcake'
-    img src='/pics/Morotscupcake.JPG' style='width:180px;height=180px;border:2px solid black;'
-    #p14
-      p1 Morotscupcake
-
-#img3
-  a href='/vanillacupcakes'
-    img src='/pics/Vaniljcupcakes.jpg' style='width:180px;height=180px;border:2px solid black;'
-    #p15
-      p1 Vanilj cupcakes
-  br
-  br
-  br
-  br
-  a href='/vanillamuffins'
-    img src='/pics/Vaniljmuffins.jpeg' style='width:180px;height=180px;border:2px solid black;'
-    #p16
-      p1 Vaniljmuffins
+-for product in @products
+  .product
+    a href="/product/#{product.id}"
+      img src="/pics/#{product.id}.jpg"
+    h2= product.name
