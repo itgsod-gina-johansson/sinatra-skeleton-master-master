@@ -7,5 +7,4 @@ class LineItem
   property :product, String
 
   belongs_to :order
-  belongs_to :product
 end
