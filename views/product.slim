@@ -1,2 +1,10 @@
-h1= @product.name
+link rel="stylesheet" type="text/css" href="/css/chocolatechip.css"
+
+h2= @product.name
+  #amount
+    form action='/amount' method='post'
+      p Antal
+      input type='text' name='amount' placeholder='1'
+
+      button type='submit' method='post' Lägg till
 img src= @product.image

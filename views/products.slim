@@ -21,6 +21,6 @@ link rel="stylesheet" type="text/css" href="/css/order.css"
 -for product in @products
   .product
     a href="/product/#{product.id}"
-      img src="/pics/#{product.id}.jpg"
+      img src= product.image
     h2= product.name
 

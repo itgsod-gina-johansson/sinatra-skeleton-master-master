@@ -1,4 +1,4 @@
-class User_order
+class UserOrder
   include DataMapper::Resource
 
   property :id, Serial

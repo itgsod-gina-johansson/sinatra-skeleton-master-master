@@ -7,7 +7,7 @@ class App < Sinatra::Base
     @statuses = Status.all
     @line_items = LineItem.all
     @orders = Order.all
-    @user_orders = User_order.all
+    @user_orders = UserOrder.all
     slim :homepage
   end
 
