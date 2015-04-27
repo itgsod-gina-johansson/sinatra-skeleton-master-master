@@ -13,7 +13,9 @@ class Order
 
   belongs_to :user
 
-  has n, :products
+  has n, :line_items
+  has n, :products, through: :line_items
+
   has n, :statuses
 
 end
