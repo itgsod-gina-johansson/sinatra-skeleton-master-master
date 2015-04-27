@@ -20,12 +20,28 @@ class Seeder
   end
 
   def self.product
-    Product.create(name: "Chocolate Chipkakor", price: "15kr", description: "God chokladboll nomnom",order_id: 1,) #product_id:1)
-    Product.create(name: "Kolakakor", price: "10kr", description: "Vanilj is really good, yas", order_id: 2,) #product_id: 2)
-    Product.create(name: "Pepparkakor", price: "10kr", description: "Pepparkakor", order_id: 3,) #product_id: 3)
-    Product.create(name: "M&Mkakor", price: "15kr", description: "M&M", order_id: 1,) #product_id: 4)
-    Product.create(name: "Vaniljdrömmar", price: "10kr", description: "Vanilj is good", order_id: 3,) #product_id: 5)
-    Product.create(name: "Vaniljhjärtan", price: "20kr", description: "Vanilj is good", order_id: 3,) #product_id: 6)
+    Product.create(name: "Chocolate Chipkakor", price: "15kr", description: "God chokladboll nomnom",order_id: 1,
+                   ingredients: "Choklad""Vetemjöl""Brun farin""Strösocker""Bakpulver""Smör""Vaniljsocker""Ägg",
+                   image: "/pics/chocolateship.jpg" ) #product_id:1)
+
+    Product.create(name: "Kolakakor", price: "10kr", description: "Vanilj is really good, yas", order_id: 2,
+                   ingredients: "Sirap""Vetemjöl""Strösocker""Bakpulver""Smör""Vaniljsocker""Ägg",
+                   image: "/pics/colacokie.jpg") #product_id: 2)
+
+    Product.create(name: "Pepparkakor", price: "10kr", description: "Pepparkakor", order_id: 3,
+                   ingredients: "Brun farin""Sirap""Vatten""Smör""Kanel""Ingefära""Kryddnejlikor""Vetemjöl""Bikarbonat",
+                   image: "gingerbread.jpg") #product_id: 3)
+
+    Product.create(name: "M&Mkakor", price: "15kr", description: "M&M", order_id: 1,
+                   ingredients: "M&M""Vetemjöl""Brun farin""Strösocker""Bakpulver""Smör""Vaniljsocker""Ägg",
+                   image: "MoMcookie.jpg") #product_id: 4)
+
+    Product.create(name: "Vaniljdrömmar", price: "10kr", description: "Vanilj is good", order_id: 3,
+                   ingredients: "Vetemjöl""Smör""Socker""Majsolja""Vaniljsocker", image_url: "/pics/vanilladream.jpg") #product_id: 5)
+
+    Product.create(name: "Vaniljhjärtan", price: "20kr", description: "Vanilj is good", order_id: 3,
+                   ingredients: "Vetemjöl""Smör""Socker""Potatismjöl""Ägg""Mjölk""Vaniljsocker""Florsocker",
+                   image: "/pics/vanillaheart.jpg") #product_id: 6)
   end
 
   def self.status
