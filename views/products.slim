@@ -1,0 +1,26 @@
+link rel="stylesheet" type="text/css" href="/css/order.css"
+
+#meny2
+  #p
+    a href='/order' Små kakor
+    br
+    br
+    a href='/cakes' Tårtor
+    br
+    br
+    a href='/muffin' Muffins
+    br
+    br
+    a href='/bun' Bullar
+
+
+#container
+  #p2 Små kakor
+
+
+-for product in @products
+  .product
+    a href="/product/#{product.id}"
+      img src="/pics/#{product.id}.jpg"
+    h2= product.name
+
