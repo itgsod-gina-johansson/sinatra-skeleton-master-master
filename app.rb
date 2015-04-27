@@ -30,28 +30,30 @@ class App < Sinatra::Base
     end
   end
 
-  post '/create_new_user' do
+  post '/create_new_user' do #user/create
     User.create(username: params['username'], password: params['password'], first_name: params['first_name'], last_name: params['last_name'], adress: params['adress'],
                    post_number: params['post_number'], email: params['email'], phonenumber: ['phonenumber'])
     redirect '/'
   end
 
-  post '/logout' do
+  post '/logout' do #user/logout
     session.clear
     redirect '/'
   end
 
-  get '/user_create' do
+  get '/user_create' do #user/new
     slim :user_create
   end
 
-  post '/user_create' do
-    slim :user_create
+  get '/product/:id' do |id|
+    @product = Product.get(id)
+    slim :product
   end
 
-  get '/order' do
+
+  get '/products' do
     @products = Product.all
-    slim :order
+    slim :products
   end
 
   get '/about' do
@@ -62,113 +64,7 @@ class App < Sinatra::Base
     slim :contact
   end
 
-  get '/muffin' do
-    slim :muffin
-  end
 
-  get '/cakes' do
-    slim :cakes
-  end
-
-  get '/bun' do
-    slim :bun
-  end
-
-  get '/product/1' do
-    slim :chocolatechip
-  end
-
-  get '/product/2' do
-    slim :colacookie
-  end
-
-  get '/product/3' do
-    slim :gingerbread
-  end
-
-  get '/product/4' do
-    slim :MoMcookie
-  end
-
-  get '/product/5' do
-    slim :vanilladream
-  end
-
-  get '/product/6' do
-    slim :vanillaheart
-  end
-
-  get '/cheesecake' do
-    slim :cheesecake
-  end
-
-  get '/chocolatecake' do
-    slim :chocolatecake
-  end
-
-  get '/marängcake' do
-    slim :marängcake
-  end
-
-  get '/mudcake' do
-    slim :mudcake
-  end
-
-  get '/prinsesscake' do
-    slim :prinsesscake
-  end
-
-  get '/strawberrycake' do
-    slim :strawberrycake
-  end
-
-  get '/cinnamonbun' do
-    slim :cinnamonbun
-  end
-
-  get '/lussebun' do
-    slim :lussebun
-  end
-
-  get '/pistagebun' do
-    slim :pistagebun
-  end
-
-  get '/sunshinebun' do
-    slim :sunshinebun
-  end
-
-  get '/vanillabun' do
-    slim :vanillabun
-  end
-
-  get '/wienerbread' do
-    slim :wienerbread
-  end
-
-  get '/blueberrymuffin' do
-    slim :blueberrymuffin
-  end
-
-  get '/carrotcupcake' do
-    slim :carrotcupcake
-  end
-
-  get '/chocolatemuffin' do
-    slim :chocolatemuffin
-  end
-
-  get '/raspberrymuffin' do
-    slim :raspberrymuffin
-  end
-
-  get '/vanillacupcakes' do
-    slim :vanillacupcakes
-  end
-
-  get '/vanillamuffins' do
-    slim :vanillamuffins
-  end
 
   get '/checkout' do
     slim :checkout
